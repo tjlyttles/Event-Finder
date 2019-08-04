@@ -29,15 +29,15 @@ const About = props => {
   return (
     <div className="main">
       <Jumbotron fluid className="header">
-        <h1 className="text-center"> Friend Finder</h1>
+        <h1 className="text-center header-text">Lonely Friend Finder</h1>
       </Jumbotron>
-    <Container className="container" >
+    {/* <Container className="container" > */}
+    <div>
 
-    <Carousel/>
 
       <Row className="buttonCol">
       {/* className="d-flex justify-content-center" */}
-        <Col>
+        <Col style={{padding: "0px"}}>
         {/* className="d-flex justify-content-between" */}
           <Button className="buttonClick" variant="primary" onClick={() => setShowRegister(true)}>
             Register
@@ -47,6 +47,8 @@ const About = props => {
           </Button>
         </Col>
       </Row>
+
+      <Carousel/>
 
       <Modal
         size="lg"
@@ -75,13 +77,13 @@ const About = props => {
         </Modal.Body>
       </Modal>   
       
-    </Container>
-    {/* <Footer/> */}
+    {/* </Container> */}
+    </div>
   
 
   <Nav className="justify-content-center end-nav" activeKey="/home">
     <Nav.Item>
-    <p className="footer-text"> © 2019 Friend Finder</p>
+    <p className="footer-text"> © 2019 Lonely Friend Finder</p>
     </Nav.Item>
   </Nav>
 
